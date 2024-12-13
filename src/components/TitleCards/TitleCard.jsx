@@ -3,7 +3,7 @@ import './TitleCard.css'
 import cards_data from '../../assets/cards/Cards_data'
 
 
-const TitleCard = () => {
+const TitleCard = ({title, category}) => {
 
   const cardsRef = useRef();
 
@@ -19,7 +19,7 @@ const TitleCard = () => {
 
   return (
     <div className='titlecards'>
-      <h2>Popular on Nerflix</h2>
+      <h2>{title?title:"Popular on Nerflix"}</h2>
       <div className="card-list" ref={cardsRef}>
         {cards_data.map((card, index)=>{
           return <div className="card" key={index}>
