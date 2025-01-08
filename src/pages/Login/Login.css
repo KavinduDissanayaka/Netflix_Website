@@ -59,7 +59,7 @@
 .remember{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
 }
 .remember input{
     width: 18px;
